@@ -8,3 +8,6 @@
   content: none !important;
 }
 
+.card-box {
+  @apply bg-gray-500 w-60 h-30 rounded-xl basis-full min-[800px]:basis-[calc(33.333%-14px)] ;
+}

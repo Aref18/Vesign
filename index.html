@@ -11,9 +11,9 @@
     />
   </head>
   <body>
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-7xl mx-auto px-8">
       <header>
-        <div class="flex items-center justify-evenly border-2 my-6 p-3">
+        <div class="flex items-center justify-evenly my-6">
           <section class="buttons flex gap-3 justify-start">
             <button class="btn bg-black text-white rounded-2xl">ورود</button>
             <button
@@ -108,7 +108,7 @@
             </ul>
           </section>
 
-          <section class="logo flex justify-end w-30">
+          <section class="logo flex justify-end w-25">
             <img src="./assets/images/vd.png" />
           </section>
         </div>
@@ -122,7 +122,14 @@
       </header>
 
       <main>
-        <section class="catagory mt-15 flex justify-evenly items-center">
+        <section class="catagory mt-15 flex justify-between items-center">
+          <div class="see-more max-[800px]:hidden">
+            <button
+              class="btn btn-md outline-2 rounded-full hover:bg-black hover:text-white"
+            >
+              بیشتر
+            </button>
+          </div>
           <div
             class="flex gap-3 overflow-x-auto whitespace-nowrap p-2 scrollbar-hide"
           >
@@ -169,24 +176,19 @@
               دانشگاهی
             </button>
           </div>
-          <div class="see-more max-[800px]:hidden">
-            <button
-              class="btn btn-md outline-2 rounded-full hover:bg-black hover:text-white"
-            >
-              بیشتر
-            </button>
-          </div>
         </section>
+
         <section class="cards mt-10">
-          <div
-            class="grid grid-cols-3 items-center justify-items-center border gap-5"
-          >
-            <div class="bg-red-300 w-30 h-20"></div>
-            <div class="bg-red-300 w-30 h-20"></div>
-            <div class="bg-red-300 w-30 h-20"></div>
-            <div class="bg-red-300 w-30 h-20"></div>
-            <div class="bg-red-300 w-30 h-20"></div>
-            <div class="bg-red-300 w-30 h-20"></div>
+          <div class="flex flex-wrap gap-5">
+            <div class="card-box"></div>
+            <div class="card-box"></div>
+            <div class="card-box"></div>
+            <div class="card-box"></div>
+            <div class="card-box"></div>
+            <div class="card-box"></div>
+            <div class="card-box"></div>
+            <div class="card-box"></div>
+            <div class="card-box"></div>
           </div>
         </section>
       </main>
