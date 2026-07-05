@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark;
+}
+
+.megamenu button::after {
+  display: none !important;
+  content: none !important;
+}
+

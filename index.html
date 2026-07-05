@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vesign</title>
+    <link href="./public/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://lib.arvancloud.ir/font-awesome/6.3.0/css/all.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="flex items-center justify-evenly border-2 m-6 p-3">
+        <section class="buttons flex gap-3 justify-start">
+          <button class="btn bg-black text-white rounded-2xl">ورود</button>
+          <button
+            class="btn bg-gray-300 rounded-4xl max-[800px]:hidden hover:bg-gray-100"
+          >
+            <i class="fa-solid fa-inbox"></i>
+          </button>
+          <button
+            class="btn bg-gray-300 w-10 rounded-4xl max-[800px]:hidden hover:bg-gray-100"
+          >
+            <i class="fa-brands fa-searchengin"></i>
+          </button>
+        </section>
+
+        <section class="menu flex justify-center">
+          <div class="megamenu text-[18px] flex justify-center p-2">
+            <button popovertarget="f2" class="min-[800px]:hidden">
+              <label class="btn btn-circle swap swap-rotate">
+                <input type="checkbox" />
+                <svg
+                  class="swap-off fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+                  />
+                </svg>
+                <svg
+                  class="swap-on fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 512 512"
+                >
+                  <polygon
+                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+                  />
+                </svg>
+              </label>
+            </button>
+
+            <div
+              id="f2"
+              popover
+              class="min-[800px]:hidden absolute -right-40 mt-7"
+            >
+              <ul
+                class="flex gap-7 flex-col w-100 grow justify-center items-center mt-5"
+              >
+                <li>صفحه اصلی</li>
+                <li>محصولات</li>
+                <li>درباره ما</li>
+                <li>تماس با ما</li>
+                <li class="flex gap-2 flex-row mb-10">
+                  <button
+                    class="bg-gray-300 w-10 rounded-4xl hover:bg-gray-100"
+                  >
+                    <i class="fa-solid fa-inbox"></i>
+                  </button>
+                  <button
+                    class="bg-gray-300 w-10 rounded-4xl hover:bg-gray-100"
+                  >
+                    <i class="fa-brands fa-searchengin"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="hidden min-[800px]:flex gap-7 ml-22.5 text-[18px]">
+            <li
+              class="bg-white text-black hover:bg-gray-300 rounded-2xl hover:outline-1 px-2"
+            >
+              صفحه اصلی
+            </li>
+            <li
+              class="bg-white text-black hover:bg-gray-300 rounded-2xl hover:outline-1 px-2"
+            >
+              محصولات
+            </li>
+            <li
+              class="bg-white text-black hover:bg-gray-300 rounded-2xl hover:outline-1 px-2"
+            >
+              درباره ما
+            </li>
+            <li
+              class="bg-white text-black hover:bg-gray-300 rounded-2xl hover:outline-1 px-2"
+            >
+              تماس با ما
+            </li>
+          </ul>
+        </section>
+
+        <section class="logo flex justify-end text-3xl">Vesign</section>
+      </div>
+
+      <div class="banner mt-25 text-center font-medium text-3xl">
+        <h1>کتاب های های مورد علاقه خود را پیدا کنید</h1>
+        <p class="mt-5 text-center font-light text-2xl">
+          در دنیایی پر از کتاب و هنر غرق شوید
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="catagory mt-15 flex justify-evenly items-center">
+        <div
+          class="flex gap-3 overflow-x-auto whitespace-nowrap p-2 scrollbar-hide"
+        >
+          <button
+            class="btn btn-md outline-2 rounded-full flex items-center gap-2"
+          >
+            <i class="fa-solid fa-grip"></i>
+            همه
+          </button>
+          <button
+            class="btn btn-md outline-2 rounded-full flex items-center gap-2"
+          >
+            <i class="fa-solid fa-book"></i>
+            رمان
+          </button>
+          <button
+            class="btn btn-md outline-2 rounded-full flex items-center gap-2"
+          >
+            <i class="fa-solid fa-landmark"></i>
+            تاریخی
+          </button>
+          <button
+            class="btn btn-md outline-2 rounded-full flex items-center gap-2"
+          >
+            <i class="fa-solid fa-flask"></i>
+            علمی
+          </button>
+          <button
+            class="btn btn-md outline-2 rounded-full flex items-center gap-2"
+          >
+            <i class="fa-solid fa-puzzle-piece"></i>
+            کودک و نوجوان
+          </button>
+          <button
+            class="btn btn-md outline-2 rounded-full flex items-center gap-2"
+          >
+            <i class="fa-solid fa-palette"></i>
+            هنر
+          </button>
+          <button
+            class="btn btn-md outline-2 rounded-full flex items-center gap-2"
+          >
+            <i class="fa-solid fa-graduation-cap"></i>
+            دانشگاهی
+          </button>
+        </div>
+        <div class="see-more max-[800px]:hidden">
+          <button class="btn btn-md outline-2 rounded-full">بیشتر</button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
