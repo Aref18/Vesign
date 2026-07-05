@@ -1623,11 +1623,41 @@
       height: var(--size);
     }
   }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-7 {
+    width: calc(var(--spacing) * 7);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+  .w-25 {
+    width: calc(var(--spacing) * 25);
+  }
+  .w-30 {
+    width: calc(var(--spacing) * 30);
+  }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
+  .w-45 {
+    width: calc(var(--spacing) * 45);
+  }
+  .w-60 {
+    width: calc(var(--spacing) * 60);
+  }
   .w-100 {
     width: calc(var(--spacing) * 100);
+  }
+  .w-fit {
+    width: fit-content;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -1746,9 +1776,6 @@
   .items-center {
     align-items: center;
   }
-  .justify-between {
-    justify-content: space-between;
-  }
   .justify-center {
     justify-content: center;
   }
@@ -1799,17 +1826,6 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .btn-outline {
-    @layer daisyui.l1.l2.l3 {
-      --btn-bg: #0000;
-      color: var(--btn-rest-fg, var(--btn-color, var(--color-base-content)));
-      --btn-border: var(--btn-color, var(--color-base-content));
-      --btn-border-style: solid;
-      background-image: none;
-      --btn-inset: 0 0 0 0 oklch(0% 0 0/0);
-      --btn-shadow: 0 0 0 0 oklch(0% 0 0/0);
-    }
-  }
   .fill-current {
     fill: currentcolor;
   }
@@ -1819,14 +1835,8 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
-  .px-1 {
-    padding-inline: var(--spacing);
-  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
-  }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
   }
   .text-center {
     text-align: center;
@@ -1838,10 +1848,6 @@
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
   .text-\[18px\] {
     font-size: 18px;
@@ -1879,16 +1885,6 @@
     outline-style: var(--tw-outline-style);
     outline-width: 2px;
   }
-  .outline-4 {
-    outline-style: var(--tw-outline-style);
-    outline-width: 4px;
-  }
-  .outline-neutral-100 {
-    outline-color: var(--color-neutral-100);
-  }
-  .outline-olive-600 {
-    outline-color: var(--color-olive-600);
-  }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
@@ -1912,27 +1908,6 @@
       --size: calc(var(--size-field, 0.25rem) * 10);
     }
   }
-  .btn-sm {
-    @layer daisyui.l1.l2 {
-      --fontsize: 0.75rem;
-      --btn-p: 0.75rem;
-      --size: calc(var(--size-field, 0.25rem) * 8);
-    }
-  }
-  .hover\:bg-amber-100 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-amber-100);
-      }
-    }
-  }
-  .hover\:bg-amber-700 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-amber-700);
-      }
-    }
-  }
   .hover\:bg-gray-100 {
     &:hover {
       @media (hover: hover) {
@@ -1953,11 +1928,6 @@
         outline-style: var(--tw-outline-style);
         outline-width: 1px;
       }
-    }
-  }
-  .max-\[800\]\:hidden {
-    @media (width < 800) {
-      display: none;
     }
   }
   .max-\[800px\]\:hidden {
