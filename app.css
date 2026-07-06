@@ -9,5 +9,21 @@
 }
 
 .card-box {
-  @apply bg-gray-200  h-100 rounded-xl basis-full min-[800px]:basis-[calc(33.333%-14px)] ;
+  @apply  bg-gray-200  h-100 rounded-xl basis-full min-[800px]:basis-[calc(33.333%-14px)]  ;
+}
+
+.card-header{
+  @apply flex justify-between items-center mt-2 mr-2 ml-2;
+}
+
+.card-body{
+  @apply w-70 h-65 m-auto overflow-hidden p-0;
+}
+
+.card-footer{
+  @apply flex justify-evenly gap-50 mt-9 relative group-hover:mt-2 transition-all duration-300 ease-out;
+}
+
+.btn-buy {
+  @apply bg-gray-300 w-full h-15 flex items-center justify-center absolute bottom-0 left-0 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out ;
 }
