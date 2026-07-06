@@ -21,7 +21,7 @@
 }
 
 .card-footer{
-  @apply flex justify-evenly gap-50 mt-9 relative group-hover:mt-2 transition-all duration-300 ease-out;
+  @apply flex justify-evenly gap-50 mt-9 bottom-2  relative group-hover:mt-2 transition-all duration-300 ease-out;
 }
 
 .btn-buy {
