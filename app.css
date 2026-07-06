@@ -9,7 +9,7 @@
 }
 
 .card-box {
-  @apply  bg-gray-200  h-100 rounded-xl basis-full min-[800px]:basis-[calc(33.333%-14px)]  ;
+  @apply  bg-gray-100  h-100 rounded-xl basis-full min-[700px]:basis-[calc(33.333%-14px)]  ;
 }
 
 .card-header{
